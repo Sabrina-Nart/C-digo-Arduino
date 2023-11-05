@@ -1,0 +1,35 @@
+int pinox;
+int pinow;
+int pinoz;
+
+void setup()
+{
+ 
+ pinMode(8, OUTPUT);
+ pinMode(9, OUTPUT);
+ pinMode(13, OUTPUT);
+    
+ for (pinox=1; pinox<=4; pinox++){
+ for (pinow=1; pinow<=3; pinow++){
+ for (pinoz=1; pinow<=5; pinoz++){
+   
+ digitalWrite(8, HIGH);
+ delay(1000);
+ digitalWrite(8, LOW);
+ delay(500);
+ }
+   
+ digitalWrite(9, HIGH);
+ delay(1000);
+ digitalWrite(9, LOW);
+ delay(500);
+ }
+   
+ digitalWrite(13, HIGH);
+ delay(1000);
+ digitalWrite(13, LOW);
+ delay(500);
+ }
+  
+}
+void loop(){}

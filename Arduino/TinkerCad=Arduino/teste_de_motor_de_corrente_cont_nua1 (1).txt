@@ -1,0 +1,22 @@
+// Teste de funcionamento de um motor
+
+int pino; //Int = variável
+          //c faz diferença se é maiúscula ou mínuscula
+
+void setup() //Configurações das variáveis
+{ 
+  //se tiver alguma mundança, só mexe aqui em cima, que reflete no programa inteiro
+  pino = 10; //Indicou qual é a porta
+  pinMode(pino, OUTPUT); //A maneira como esse pino vai trabalhar
+}
+
+void loop()
+{
+  //Liga o motor
+  digitalWrite(pino, HIGH); //High = liga = Joga um tensão baixa na porta
+  delay(4000); //Espera 4 segundos
+  
+  //desliga o motor
+  digitalWrite(pino, LOW); //Low = Baixo = desliga = para de mandar energia por 1 segundo
+  delay(1000); // Espera por 1 segundo
+}

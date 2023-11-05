@@ -1,0 +1,32 @@
+int a, b, c;
+
+void setup()
+{
+  a = 9;
+  pinMode(a, OUTPUT);
+  
+  b = 10;
+  pinMode(b, OUTPUT);
+  
+  c = 11;
+  pinMode(c, OUTPUT);    
+}
+
+void loop()
+{
+  digitalWrite(a, HIGH);
+  delay(5000); 
+  digitalWrite(a, LOW);
+  delay(500); 
+  
+  digitalWrite(b, HIGH);
+  delay(5000); 
+  digitalWrite(b, LOW);
+  delay(500);
+  
+  digitalWrite(c, HIGH);
+  delay(5000); 
+  digitalWrite(c, LOW);
+  delay(500);
+  
+}
